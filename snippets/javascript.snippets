@@ -1,5 +1,3 @@
-snippet cs
-	var cx = React.addons.classSet;
 snippet cdm
 	componentDidMount() {
 		${1}
@@ -24,10 +22,6 @@ snippet cwu
 	componentWillUpdate(nextProps, nextState) {
 		${1}
 	}
-snippet cx
-	cx({
-		${1}: ${2}
-	});
 snippet fup
 	forceUpdate(${1:callback});
 snippet gdp
@@ -44,10 +38,6 @@ snippet gis
 	}
 snippet ism
 	isMounted()
-snippet jsx
-	/**
-	 * @jsx React.DOM
-	 */
 snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
@@ -55,7 +45,7 @@ snippet pt
 snippet rcc
 	import React, { PropTypes, Component } from 'react'
 
-	class _${1:ClassName} extends Component {
+	class ${1:ClassName} extends Component {
 
 		render() {
 			return (
@@ -64,13 +54,13 @@ snippet rcc
 		}
 	}
 
-	_$1.propTypes = {
+	$1.propTypes = {
 
 	}
 
-	export default _$1
+	export default $1
 snippet cc
-	class _${1:ClassName} extends Component {
+	class ${1:ClassName} extends Component {
 
 		render() {
 			return (
@@ -79,31 +69,31 @@ snippet cc
 		}
 	}
 
-	export const $1 = _$1
+	export const $1
 snippet slc
-	const _${1:ClassName} = (props) => {
+	const ${1:ClassName} = (props) => {
 		return (
 			${0:<div />}
 		)
 	}
 
-	_$1.propTypes = {
+	$1.propTypes = {
 
 	}
 snippet rslc
 	import React, { PropTypes } from 'react'
 
-	const _${1:ClassName} = (props) => {
+	const ${1:ClassName} = (props) => {
 		return (
 			${0:<div />}
 		)
 	}
 
-	_$1.propTypes = {
+	$1.propTypes = {
 
 	}
 
-	export default _$1
+	export default $1
 snippet ren
 	render() {
 		return (
